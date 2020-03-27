@@ -7,10 +7,11 @@ public:
         {
             char c=strs[0][j];
             for(int i=1;i<strs.size();i++)
-            {if(j>=strs[i].size()||strs[i][j]!=c)
             {
-                return res;
-            }
+                if(j>=strs[i].size()||strs[i][j]!=c)
+                {
+                    return res;
+                }
             }
             res.push_back(c);
         }
